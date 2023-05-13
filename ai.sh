@@ -28,7 +28,7 @@ fi
 
 # Default parameters
 MODEL="gpt-3.5-turbo"
-SYSTEM_PROMPT="You are a helpful assistant."
+SYSTEM_PROMPT="You are a helpful AI assistant."
 MAX_TOKENS="1000"
 TEMPERATURE="0.5"
 
@@ -37,7 +37,7 @@ read -p "Change default parameters? (y/n): " change_default
 if [[ $change_default == 'y' || $change_default == 'Y' ]]; then
   read -p "Enter model (default: gpt-3.5-turbo): " input
   [ "$input" != "" ] && MODEL=$input
-  read -p "Enter system prompt (default: You are a helpful assistant.): " input
+  read -p "Enter system prompt (default: You are a helpful AI assistant.): " input
   [ "$input" != "" ] && SYSTEM_PROMPT=$input
   read -p "Enter max tokens (default: 1000): " input
   [ "$input" != "" ] && MAX_TOKENS=$input
