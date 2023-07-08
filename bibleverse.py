@@ -1,3 +1,6 @@
+# TODO -- reject invalid output / be able to handle abbreviations or different cases of verses
+# eg kinda like the YV format? 
+
 import sys
 import requests
 import re
@@ -159,7 +162,6 @@ def verse_loop():
         user_messages = construct_prompt(bs)
         #print(user_messages)
 
-        # MODIFY THIS to just munge the two arrays
         #  Append the user's message to the conversation history
         all_messages.extend(user_messages)
 
