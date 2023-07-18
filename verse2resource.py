@@ -74,7 +74,7 @@ def main():
                 Why this one: insert reasoning here""" }
         ]
 
-        # Call the OpenAI API with the messages prmopt using completions.py. That needs to receive a messages array. The function saves the full api call but returns just the string of the chat completion
+        # Call the OpenAI API with the messages prompt using completions.py. That needs to receive a messages array. The function saves the full api call but returns just the string of the chat completion
         #print(messages)
         assistant_message = openai_completion(messages)
         print(assistant_message)
